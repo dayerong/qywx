@@ -1,0 +1,44 @@
+$def with (results)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="
+        height = device-height ,
+        width = device-width ,
+        initial-scale = 0.6 ,
+        minimum-scale = 0.5 ,
+        maximum-scale = 1.0 ,
+        user-scalable = yes ,
+      ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JIRA</title>
+    <link href="/static/css/h5box.css" rel="stylesheet" type="text/css"/>
+    <script src="/static/js/h5box.js" type="text/javascript"></script>
+</head>
+<body>
+<hr/>
+<div class="container" style="overflow: auto">
+    <p>&nbsp;</p>
+    <legend>我的JIRA</legend>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>JIRA ID</th>
+            <th>主题</th>
+            <th>报告人</th>
+            <th>提交时间</th>
+        </tr>
+        </thead>
+        <tbody>
+        $for i in results:
+        <tr>
+            $for s in i:
+            <td>$s</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
+</body>
+</html>

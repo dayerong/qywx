@@ -1,0 +1,10 @@
+$def with (toUser,fromUser,createTime,agentid)
+<xml>
+    <ToUserName><![CDATA[$toUser]]></ToUserName>
+    <FromUserName><![CDATA[$fromUser]]></FromUserName>
+    <CreateTime>$createTime</CreateTime>
+    <MsgType><![CDATA[event]]></MsgType>
+    <Event><![CDATA[view]]></Event>
+    <EventKey><![CDATA[http://dpinter.daphne.com.cn/jira]]></EventKey>
+    <AgentID>$agentid</AgentID>
+</xml>
