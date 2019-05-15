@@ -15,3 +15,6 @@ class ToInnerjira():
 
     def GET(self):
         raise web.seeother('http://api.my.com.cn/inner_jira')
+
+
+
